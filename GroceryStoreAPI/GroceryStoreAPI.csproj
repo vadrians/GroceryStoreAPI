@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GroceryStoreAPI.Application\GroceryStoreAPI.Application.csproj" />
+    <ProjectReference Include="..\GroceryStoreAPI.Contracts\GroceryStoreAPI.Contracts.csproj" />
+    <ProjectReference Include="..\GroceryStoreAPI.Data\GroceryStoreAPI.Data.csproj" />
+  </ItemGroup>
+</Project>
